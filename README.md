@@ -7,3 +7,6 @@ Here the passwords are directly stored into the database. When user tries to log
 ## Level 2
 Here the password is encrypted using mongoose-encryption package. The encryption is done using a key SECRET then this encrypted password is stored in the database. When the user tries to login, the password is checked against the decrypted version of password stored in the database.
 
+## Level 3
+Here the password is hashed using md5 package. The hash function converts hashes the password and stores it in the database. When the user tries to login, the password is hashed and checked against the hashed password stored in the database.
+
