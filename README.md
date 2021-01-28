@@ -13,3 +13,6 @@ Here the password is hashed using md5 package. The hash function converts hashes
 ## Level 4
 The password is hashed and salted using bcrypt. Salting is just adding a random characters to the password. The number of times the password is salted depends on the creator (in this project we have salted 10 times) and the salt and hashed + salted password is stored in the database. When the user tries to login, the password is hashed and salted then compared with that in the database.
 
+## Level 5
+In Level-5 authentication, the packages that we work with are passport, passport-local, passport-local-mongoose and express-session and are used to create cookies to store user login sessions. The passport-local-mongoose package automatically salts and hashes the password for us.
+
