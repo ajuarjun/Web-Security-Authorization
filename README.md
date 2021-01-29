@@ -16,3 +16,5 @@ The password is hashed and salted using bcrypt. Salting is just adding a random 
 ## Level 5
 In Level-5 authentication, the packages that we work with are passport, passport-local, passport-local-mongoose and express-session and are used to create cookies to store user login sessions. The passport-local-mongoose package automatically salts and hashes the password for us.
 
+## Level 6
+In Level 6 authentication, we add google-oauth20 package so that we can sign in through google thereby our website doesn't need to store password. The passwords are stored at Google servers.
